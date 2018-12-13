@@ -1,6 +1,6 @@
 function update() {
   var xmlhttp = new XMLHttpRequest();
-	xmlhttp.open('GET', 'https://api.robinhood.com/midlands/tailgate/mcduckling/spot/joe%40robinhood.com/', true);
+	xmlhttp.open('GET', 'https://api.robinhood.com/midlands/tailgate/mcduckling/spot/joe%40robinhood.com/?callback=getJSONP', true);
 	xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState == 4) {
 					if(xmlhttp.status == 200) {
